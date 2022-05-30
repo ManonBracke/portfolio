@@ -90,7 +90,7 @@ th {
   font-size: 0.8rem;
   font-weight: 800;
 }
-@media screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) {
   .nav p {
     font-size: 1rem;
   }
@@ -186,7 +186,7 @@ th {
   transform: rotate(-45deg);
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .menu-button-container {
     display: flex;
   }
@@ -251,14 +251,10 @@ th {
   width: 80%;
 }
 .contact-area .contact-content h6 {
-  color: #8b9199;
+  color: #ccc;
   font-size: 1.5rem;
   font-weight: 400;
   margin-bottom: 10px;
-}
-.contact-area .contact-content span {
-  color: #353c47;
-  margin: 0 10px;
 }
 .contact-area .contact-social {
   margin-top: 30px;
@@ -311,7 +307,8 @@ th {
 }
 .contact-area input[type=submit] {
   background: #E89138;
-  color: white;
+  border: #E89138;
+  color: #fff;
   font-weight: 700;
   font-size: 1.2rem;
   border-radius: 0.5rem;
@@ -319,7 +316,7 @@ th {
   transition: 0.5s;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
-.contact-area input:hover {
+.contact-area input[type=submit]:hover {
   background: #F5BF2F;
   transition: 0.5s;
 }
@@ -328,7 +325,7 @@ th {
   margin: 5em auto;
 }
 .contact-area form {
-  background-color: #ffffff;
+  background-color: #b6afaf;
   padding: 2rem;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
   border-radius: 1.5rem;
@@ -350,6 +347,75 @@ th {
 
 .contact-social > ul {
   display: inline-flex;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hero {
+  background-color: #b6afaf;
+  color: #fff;
+  padding: 5em 0;
+}
+.hero__header {
+  font-size: 4rem;
+}
+@media only screen and (min-width: 768px) {
+  .hero__header {
+    width: 30%;
+  }
+}
+.hero__header--gold {
+  color: #E89138;
+}
+.hero__text {
+  font-size: 1.5rem;
+}
+.hero__image {
+  border-radius: 2rem;
+}
+@media only screen and (min-width: 768px) {
+  .hero__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-bottom: 4rem;
+    width: 50%;
+  }
+}
+
+.info {
+  padding: 1em 0;
+  background-color: #f1f1f1;
+}
+.info__header {
+  color: #E89138;
+  font-size: 1.8rem;
+}
+.info__text {
+  font-size: 1.1rem;
+}
+@media only screen and (min-width: 768px) {
+  .info__content {
+    width: 30%;
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .flex {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 footer {
@@ -383,7 +449,7 @@ a {
 }
 
 .logo-tall {
-  height: 5rem;
+  height: 10rem;
 }
 
 /*# sourceMappingURL=main.css.map */

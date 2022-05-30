@@ -2,6 +2,7 @@
     border-bottom: 1px solid $black;
     text-align: center;
     padding: 60px 0;
+    // background-color: $primary;
 
     .contact-content {
         p {
@@ -22,15 +23,10 @@
         }
 
         h6 {
-            color: #8b9199;
+            color: $gray;
             font-size: 1.5rem;
             font-weight: 400;
             margin-bottom: 10px;
-        }
-
-        span {
-            color: #353c47;
-            margin: 0 10px;
         }
 
     }
@@ -96,7 +92,8 @@
 
     input[type="submit"] {
         background: $secondary;
-        color: white;
+        border: $secondary;
+        color: $white;
         font-weight: 700;
         font-size: 1.2rem;
         border-radius: 0.5rem;
@@ -105,7 +102,7 @@
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     }
 
-    input:hover {
+    input[type="submit"]:hover {
         background: $terciary;
         transition: 0.5s;
     }
@@ -116,7 +113,7 @@
     }
 
     form {
-        background-color: #ffffff;
+        background-color: $primary;
         padding: 2rem;
         box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
         border-radius: 1.5rem;

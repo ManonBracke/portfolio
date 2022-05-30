@@ -14,7 +14,7 @@
         font-weight: 800;
     }
 
-    @media #{$tablet} {
+    @include media-query($tablet) {
         p {
             font-size: 1rem;
         }
@@ -121,7 +121,7 @@
 
 
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
     .menu-button-container {
         display: flex;
     }

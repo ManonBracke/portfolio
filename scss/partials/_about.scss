@@ -1,0 +1,76 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero {
+    background-color: $primary;
+    color: $white;
+    padding: 5em 0;
+
+    &__header {
+        font-size: 4rem;
+
+        @include media-query($tablet) {
+            width: 30%;
+        }
+
+        &--gold {
+            color: $secondary;
+        }
+    }
+
+    &__text {
+        font-size: 1.5rem;
+    }
+
+    &__image {
+        border-radius: 2rem;
+    }
+
+    &__content {
+        @include media-query($tablet) {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            margin-bottom: 4rem;
+            width: 50%;
+        }
+    }
+}
+
+.info {
+    padding: 1em 0;
+    background-color: #f1f1f1;
+
+    &__header {
+        color: $secondary;
+        font-size: 1.8rem;
+    }
+
+    &__text {
+        font-size: 1.1rem;
+    }
+
+    &__content {
+        @include media-query($tablet) {
+            width: 30%;
+            text-align: center;
+        }
+    }
+}
+
+
+.flex {
+    @include media-query($tablet) {
+        display: flex;
+        justify-content: space-between;
+    }
+}
