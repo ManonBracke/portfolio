@@ -1,4 +1,4 @@
-# portfolio
+# Portfolio
 
 ## Explication du projet
 
@@ -10,4 +10,4 @@ Dans ces différentes page, j'y ai mis tous les information demander pour les di
 
 La partie **HTML** finie je me suis attelé à faire le **CSS** pour rendre visuellement plus agréable à regarder et le rendre disônible sur tablette et mobile le rendant par cela responsive. Sans utiliser les FrameWorks 
 
-[Lien du site](../dist/index.html)
+[Lien du site](/dist/index.html)
