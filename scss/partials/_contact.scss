@@ -109,8 +109,12 @@
     }
 
     .container-form {
-        width: 25em;
+        width: 80%;
         margin: 5em auto;
+
+        @include media-query($desktop) {
+            width: 50%;
+        }
     }
 
     form {

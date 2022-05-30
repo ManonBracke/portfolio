@@ -322,8 +322,13 @@ th {
   transition: 0.5s;
 }
 .contact-area .container-form {
-  width: 25em;
+  width: 80%;
   margin: 5em auto;
+}
+@media only screen and (min-width: 992px) {
+  .contact-area .container-form {
+    width: 50%;
+  }
 }
 .contact-area form {
   background-color: #b6afaf;
