@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- IcoFont -->
+    <link rel="stylesheet" href="../node_modules/@icon/icofont/icofont.css">
+
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="css/main.css">
+    <title>PortFolio</title>
+</head>
+
+<body>
+    <header class="nav">
+        <a href="index.html"><img src="img/Logo.svg" alt="Logo" class="logo"></a>
+        <input id="menu-toggle" type="checkbox" />
+        <label class='menu-button-container' for="menu-toggle">
+            <span class='menu-button'></span>
+        </label>
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Skills</a></li>
+            <li><a href="#">Studies</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        </ul>
+    </header>
+
+    <main>
+
+        <section class="contact-area" id="contact">
+            <!-- <h1>Me contacter</h1> -->
+            <div class="contact-content">
+                <a href="#"><img src="img/LogoNoir.svg" alt="logo" class="logo-tall"></a>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua. Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim,
+                    necessitatibus. </p>
+                <div class="hr"></div>
+                <div class="container-form">
+                    <form method="post">
+
+                        <label for="name"><span>Name <span class="required-star">*</span></span></label>
+                        <input type="text" id="name" name="user_name">
+
+                        <label for="mail"><span>Email<span class="required-star">*</span> </span></label>
+                        <input type="email" id="mail" name="user_email">
+
+                        <label for="msg"><span>Message <span class="required-star">*</span></span></label>
+                        <textarea rows="4" cols="50"></textarea>
+
+                        <input type="submit">
+
+                    </form>
+                </div>
+                <h6>Rue ma compagne 24, 4821 Dison, Belgique.</h6>
+                <h6>+32 471 03 43 33</h6>
+                <div class="contact-social">
+                    <ul>
+                        <li><a href="https://fr-fr.facebook.com/"><i class="icofont icofont-facebook"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/manon-bracke/"><i
+                                    class="icofont icofont-linkedin"></i></a></li>
+                        <li><a href="https://github.com/ManonBracke"><i class="icofont icofont-github"></i></a></li>
+                        <li><a href="https://www.behance.net/manonbracke1"><i class="icofont icofont-behance"></i></a>
+                        </li>
+                        <li><a href="https://www.pinterest.fr/manonbracke42/_saved/"><i
+                                    class="icofont icofont-pinterest"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Copyright &copy; 2022 <img src="img/Logo.svg" alt="logo" class="logo"> All Rights
+            Reserved.</p>
+    </footer>
+
+</body>
+
+</html>

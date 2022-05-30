@@ -1,0 +1,389 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/*! minireset.css v0.0.7 | MIT License | github.com/jgthms/minireset.css */
+html,
+body,
+p,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+blockquote,
+figure,
+fieldset,
+legend,
+textarea,
+pre,
+iframe,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+button,
+input,
+select {
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+img,
+video {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #2c2c2c;
+  color: #fff;
+  height: 3.5rem;
+  padding: 1rem;
+}
+.nav p {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 800;
+}
+@media screen and (min-width: 768px) {
+  .nav p {
+    font-size: 1rem;
+  }
+}
+.nav img {
+  padding-top: 0.5rem;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.menu > li {
+  margin: 0 0.4rem;
+  overflow: hidden;
+}
+.menu > li > a {
+  color: #E89138;
+  position: relative;
+  display: block;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-left: 1rem;
+  background-color: inherit;
+  text-decoration: none;
+}
+.menu > li a:hover::after {
+  width: 100%;
+}
+.menu > li a::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  bottom: -0.2rem;
+  left: 0;
+  width: 0;
+  height: 6px;
+  background-color: #E89138;
+  transition: width 0.25s;
+}
+
+.menu-button-container {
+  display: none;
+  height: 100%;
+  width: 30px;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.menu-button,
+.menu-button::before,
+.menu-button::after {
+  display: block;
+  background-color: #E89138;
+  position: absolute;
+  height: 4px;
+  width: 30px;
+  transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  border-radius: 2px;
+}
+
+.menu-button::before {
+  content: "";
+  margin-top: -8px;
+}
+
+.menu-button::after {
+  content: "";
+  margin-top: 8px;
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::before {
+  margin-top: 0px;
+  transform: rotate(45deg);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button {
+  background-color: inherit;
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::after {
+  margin-top: 0px;
+  transform: rotate(-45deg);
+}
+
+@media screen and (max-width: 767px) {
+  .menu-button-container {
+    display: flex;
+  }
+
+  .menu {
+    position: absolute;
+    top: 0;
+    margin-top: 50px;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #menu-toggle ~ .menu li {
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+
+  #menu-toggle:checked ~ .menu li {
+    height: 2.5em;
+    padding: 0.5em;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+
+  .menu > li {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0.5em 0;
+    width: 100%;
+    color: #fff;
+    background-color: #2c2c2c;
+  }
+
+  .menu > li:not(:last-child) {
+    border-bottom: 1px solid #fff;
+  }
+}
+.contact-area {
+  border-bottom: 1px solid #2c2c2c;
+  text-align: center;
+  padding: 60px 0;
+}
+.contact-area .contact-content p {
+  font-size: 1.2rem;
+  margin: 30px 0 60px;
+  position: relative;
+}
+.contact-area .contact-content p::after {
+  background: #2c2c2c;
+  bottom: -30px;
+  content: "";
+  height: 1px;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%);
+  width: 80%;
+}
+.contact-area .contact-content h6 {
+  color: #8b9199;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+.contact-area .contact-content span {
+  color: #353c47;
+  margin: 0 10px;
+}
+.contact-area .contact-social {
+  margin-top: 30px;
+}
+.contact-area .contact-social a {
+  color: #E89138;
+  position: relative;
+  display: block;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-left: 2rem;
+  text-decoration: none;
+}
+.contact-area .contact-social a:hover::after {
+  width: 100%;
+}
+.contact-area .contact-social a::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  bottom: -0.2rem;
+  left: 0;
+  width: 0;
+  height: 0.4rem;
+  background-color: #E89138;
+  transition: width 0.25s;
+}
+.contact-area img {
+  max-width: 210px;
+}
+.contact-area label,
+.contact-area input,
+.contact-area textarea {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+.contact-area span {
+  font-weight: 700;
+  color: #102a43;
+  line-height: 2.5rem;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  margin: 0;
+}
+.contact-area span .required-star {
+  color: #fc4366 !important;
+  margin: 0;
+}
+.contact-area input[type=submit] {
+  background: #E89138;
+  color: white;
+  font-weight: 700;
+  font-size: 1.2rem;
+  border-radius: 0.5rem;
+  margin-top: 1.3em;
+  transition: 0.5s;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.contact-area input:hover {
+  background: #F5BF2F;
+  transition: 0.5s;
+}
+.contact-area .container-form {
+  width: 27rem;
+  margin: 5em auto;
+}
+.contact-area form {
+  background-color: #ffffff;
+  padding: 2rem;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  border-radius: 1.5rem;
+  overflow: hidden;
+}
+.contact-area input,
+.contact-area textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  color: #102a43;
+  caret-color: #829ab1;
+  box-sizing: border-box;
+  font-size: 1rem;
+  box-shadow: inset 0 2px 4px 0 rgba(206, 209, 224, 0.2);
+  border-radius: 3px;
+  line-height: 2rem;
+}
+
+.contact-social > ul {
+  display: inline-flex;
+}
+
+footer {
+  background: #2c2c2c;
+  color: #868c96;
+}
+footer p {
+  padding: 40px 0;
+  text-align: center;
+}
+footer img {
+  width: 44px;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: #f4f4f4;
+}
+
+a {
+  color: #000;
+}
+
+.logo {
+  height: 2rem;
+}
+
+.logo-tall {
+  height: 5rem;
+}
+
+/*# sourceMappingURL=main.css.map */
