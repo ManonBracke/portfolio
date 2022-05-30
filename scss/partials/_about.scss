@@ -4,12 +4,6 @@
     box-sizing: border-box;
 }
 
-.container {
-    width: 80%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
 .info {
     padding: 1em 0;
     background-color: #f1f1f1;
@@ -28,13 +22,5 @@
             width: 30%;
             text-align: center;
         }
-    }
-}
-
-
-.flex {
-    @include media-query($tablet) {
-        display: flex;
-        justify-content: space-between;
     }
 }
