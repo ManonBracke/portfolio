@@ -1,0 +1,57 @@
+body {
+
+    img {
+        max-width: 100%;
+        vertical-align: bottom;
+    }
+}
+
+// Card
+.testimonial {
+    background-color: $secondary;
+    border-radius: 5px;
+    padding: 40px 25px 25px;
+    flex-grow: 1;
+    flex-basis: 17.5rem;
+    max-width: 20rem;
+    position: relative;
+
+    // Fonts 	
+    &__text {
+        font-weight: normal;
+        font-size: 1rem;
+        line-height: 21px;
+        margin-bottom: 1.2rem;
+    }
+
+    &__job {
+        font-weight: normal;
+        font-size: 0.8rem;
+        line-height: 10px;
+        letter-spacing: 0.5px;
+    }
+
+    &__name {
+        font-weight: bold;
+        font-size: 1rem;
+        line-height: 12px;
+        letter-spacing: 0.5px;
+        margin-bottom: 5px;
+    }
+
+    // Bottom layout
+    &__img {
+        display: inline-block;
+        width: 2rem;
+        margin-right: 10px;
+
+        img {
+            vertical-align: center;
+            border-radius: 1rem;
+        }
+    }
+
+    &__info {
+        display: inline-block;
+    }
+}
