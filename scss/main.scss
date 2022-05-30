@@ -4,9 +4,10 @@
 @import 'partials/tools';
 @import 'partials/variables';
 @import 'partials/header';
-@import 'partials/contact';
 @import 'partials/about';
 @import 'partials/skills';
+@import 'partials/testimonials';
+@import 'partials/contact';
 @import 'partials/footer';
 
 
@@ -52,13 +53,40 @@ a {
   }
 }
 
+.container {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  &--testimonials {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px 40px;
+    justify-content: center;
+    padding: 45px 45px 90px;
+
+    @include media-query($tablet) {
+      padding: 2rem 0;
+    }
+
+  }
+
+}
+
+.flex {
+  @include media-query($tablet) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 .hero {
   background-color: $primary;
   color: $white;
   padding: 5em 0;
 
   &__header {
-    font-size: 3.8rem;
+    font-size: 3.5rem;
 
     @include media-query($tablet) {
       width: 30%;
