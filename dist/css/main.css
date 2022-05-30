@@ -186,7 +186,7 @@ th {
   transform: rotate(-45deg);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   .menu-button-container {
     display: flex;
   }
@@ -252,7 +252,7 @@ th {
 }
 .contact-area .contact-content h6 {
   color: #595959;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: 400;
   margin-bottom: 10px;
 }
@@ -327,7 +327,7 @@ th {
 }
 @media only screen and (min-width: 992px) {
   .contact-area .container-form {
-    width: 50%;
+    width: 40%;
   }
 }
 .contact-area form {
