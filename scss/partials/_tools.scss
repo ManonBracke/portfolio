@@ -3,3 +3,46 @@
 @mixin style-border($border-color) {
   border: 1px solid $border-color;
 }
+
+@mixin media-query($screen-size) {
+  @media only screen and (min-width: $screen-size) {
+    @content;
+  }
+}
+
+@mixin animation ($pourcent, $text) {
+  .progress {
+    max-width: $pourcent;
+    height: 100%;
+    background: $secondary;
+    border-radius: 3px;
+    position: relative;
+    animation: 2s ease 0s 1 loadBars;
+  }
+
+  .progress::after {
+    content: $text;
+    font-size: 1rem;
+    line-height: 1rem;
+    text-align: center;
+    height: 1rem;
+    width: 2.5rem;
+    background: $gray;
+    position: absolute;
+    border-radius: 5px;
+    right: -18px;
+    top: -30px;
+  }
+
+  .progress::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    right: -5px;
+    top: -12px;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid $gray;
+  }
+}

@@ -1,0 +1,96 @@
+.container-skill {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    //align-items: center;
+    padding: 2rem;
+
+    h2 {
+        color: $secondary;
+        font-weight: 600;
+        font-size: 1.5rem;
+    }
+
+    .skills {
+        padding: 10px;
+        width: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .skill {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .title {
+        color: $black;
+        font-weight: 700;
+    }
+
+    .progress-bar {
+        background: $dark-grey;
+        border-radius: 3px;
+        width: 100%;
+        height: 1rem;
+        margin-top: 5px;
+    }
+}
+
+#html {
+    @include animation(90%, "90%")
+}
+
+#css {
+    @include animation(80%, "80%")
+}
+
+#sass {
+    @include animation(75%, "75%")
+}
+
+#js {
+    @include animation(40%, "40%")
+}
+
+#php {
+    @include animation(60%, "60%")
+}
+
+#sql {
+    @include animation(55%, "55%")
+}
+
+#ind {
+    @include animation(80%, "80%")
+}
+
+#ps {
+    @include animation(70%, "70%")
+}
+
+#illu {
+    @include animation(90%, "90%")
+}
+
+#ae {
+    @include animation(65%, "65%")
+}
+
+#xd {
+    @include animation(70%, "70%")
+}
+
+@keyframes loadBars {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 100%;
+    }
+
+}
