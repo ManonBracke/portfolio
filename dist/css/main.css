@@ -661,11 +661,6 @@ th {
     width: 100%;
   }
 }
-body img {
-  max-width: 100%;
-  vertical-align: bottom;
-}
-
 .testimonial {
   background-color: #E89138;
   border-radius: 5px;
@@ -888,18 +883,6 @@ a {
   width: 80%;
   max-width: 1200px;
   margin: 0 auto;
-}
-.container--testimonials {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 25px 40px;
-  justify-content: center;
-  padding: 45px 45px 90px;
-}
-@media only screen and (min-width: 768px) {
-  .container--testimonials {
-    padding: 2rem 0;
-  }
 }
 
 @media only screen and (min-width: 768px) {

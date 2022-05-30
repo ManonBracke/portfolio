@@ -58,18 +58,7 @@ a {
   max-width: 1200px;
   margin: 0 auto;
 
-  &--testimonials {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 25px 40px;
-    justify-content: center;
-    padding: 45px 45px 90px;
 
-    @include media-query($tablet) {
-      padding: 2rem 0;
-    }
-
-  }
 
 }
 
