@@ -100,6 +100,7 @@
         margin-top: 1.3em;
         transition: 0.5s;
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        text-align: center;
     }
 
     input[type="submit"]:hover {
@@ -108,7 +109,7 @@
     }
 
     .container-form {
-        width: 27rem;
+        width: 25em;
         margin: 5em auto;
     }
 
