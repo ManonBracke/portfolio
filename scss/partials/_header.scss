@@ -48,6 +48,10 @@
             text-decoration: none;
         }
 
+        a.active:after {
+            width: 100%;
+        }
+
         //animation lien menu 
         a:hover::after {
             width: 100%;

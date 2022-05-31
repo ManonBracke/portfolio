@@ -33,8 +33,7 @@
             <li><a href="studies.html">Studies</a></li>
             <li><a href="portfolio.html">Portfolio</a></li>
             <li><a href="testimonials.html">Testimonials</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
+            <li><a href="contact.html" class="active">Contact</a></li>
         </ul>
     </header>
 
@@ -54,16 +53,22 @@
         <section class="contact-area" id="contact">
             <div class="contact-content">
                 <div class="container-form">
-                    <form method="post">
+                    <form>
 
-                        <label for="name"><span>Name <span class="required-star">*</span></span></label>
-                        <input type="text" id="name" name="user_name">
+                        <label for="lastname"><span>Lastname <span class="required-star">*</span></span></label>
+                        <input type="text" id="lastname" name="lastname">
+
+                        <label for="firstname"><span>Firstname <span class="required-star">*</span></span></label>
+                        <input type="text" id="firstname" name="firstname">
 
                         <label for="mail"><span>Email<span class="required-star">*</span> </span></label>
                         <input type="email" id="mail" name="user_email">
 
-                        <label for="msg"><span>Message <span class="required-star">*</span></span></label>
-                        <textarea rows="4" cols="50"></textarea>
+                        <label for="subject"><span>Subject <span class="required-star">*</span></span></label>
+                        <input type="text" id="subject" name="subject">
+
+                        <label for="text"><span>Message <span class="required-star">*</span></span></label>
+                        <textarea  id="text" rows="4" cols="50"></textarea>
 
                         <input type="submit">
 

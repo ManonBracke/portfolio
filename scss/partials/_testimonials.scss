@@ -4,8 +4,8 @@
     border-radius: 5px;
     padding: 40px 25px 25px;
     flex-grow: 1;
-    flex-basis: 17.5rem;
-    max-width: 20rem;
+    flex-basis: 18rem;
+    //width: 20rem;
     position: relative;
 
     // Fonts 	
@@ -34,12 +34,12 @@
     // Bottom layout
     &__img {
         display: inline-block;
-        width: 2rem;
-        margin-right: 10px;
+        width: 2.5rem;
+        //margin-right: 10px;
+
 
         img {
-            vertical-align: center;
-            border-radius: 1rem;
+            clip-path: ellipse(33% 50%);
         }
     }
 
