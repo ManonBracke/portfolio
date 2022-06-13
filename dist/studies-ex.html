@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Icon Onglet-->
+    <link rel="icon" type="image/png" href="img/LogoNoir.svg" />
+
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- IcoFont -->
+    <link rel="stylesheet" href="../node_modules/@icon/icofont/icofont.css">
+
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="css/main.css">
+    <title>PortFolio</title>
+</head>
+
+<body>
+    <div id="btn"><i class="icofont icofont-arrow-up"></i></div>
+    <header class="nav">
+        <a href="index.html"><img src="img/Logo.svg" alt="Logo" class="logo"></a>
+        <input id="menu-toggle" type="checkbox" />
+        <label class='menu-button-container' for="menu-toggle">
+            <span class='menu-button'></span>
+        </label>
+        <ul class="menu">
+            <li><a href="index.html">About</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="studies.html" class="active">Studies</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="testimonials.html">Testimonials</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </header>
+
+    <main class="studies">
+        <section class="hero">
+            <div class="container flex">
+                <h1 class="hero__header">
+                    All
+                    <span class="hero__header--gold">Experiences</span>
+                </h1>
+                <div class="hero__content">
+                    <p class="hero__text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente laboriosam illum minus soluta
+                        fugit ab debitis earum sint doloremque amet similique hic voluptatem quae nisi consequatur
+                        dolores iusto, dolorem deleniti iure repellat explicabo eveniet tempore exercitationem aliquam.
+                        Suscipit, architecto eveniet!
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <div class="navigation-studies">
+            <ul>
+                <li><a href="studies.html">Studies</a></li>
+                <li><a href="studies-ex.html" class="active">Experiences</a></li>
+                <li><a href="studies-job.html">Student jobs</a></li>
+            </ul>
+        </div>
+
+        <section id="cd-timeline" class="cd-container">
+            <div class="cd-timeline-block">
+                <div class="cd-timeline-img cd-picture">
+                    <img src="img/logo-HN.png" alt="Hungry Nuggets">
+                </div>
+                <div class="cd-timeline-content">
+                    <h2>Hungry Nuggets</h2>
+                    <div class="timeline-content-info">
+                        <span class="timeline-content-info-title">
+                            <i class="icofont icofont-computer"></i>
+                            Développement Web (application)
+                        </span>
+                        <span class="timeline-content-info-date">
+                            <i class="icofont icofont-calendar"></i>
+                            3 months from April / June 2021
+                        </span>
+                    </div>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis, dolorem.</p>
+                </div>
+
+            </div>
+
+            <div class="cd-timeline-block">
+                <div class="cd-timeline-img cd-picture">
+                    <img src="img/logo-ilp.png" alt="I love printing">
+                </div>
+
+                <div class="cd-timeline-content">
+                    <h2>I love printing</h2>
+                    <div class="timeline-content-info">
+                        <span class="timeline-content-info-title">
+                            <i class="icofont icofont-computer"></i>
+                            Communication visuelle
+                        </span>
+                        <span class="timeline-content-info-date">
+                            <i class="icofont icofont-calendar"></i>
+                            2 weeks in March 2019
+                        </span>
+                    </div>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis, dolorem.</p>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+    <footer>
+        <p>Copyright &copy; 2022 <img src="img/Logo.svg" alt="logo" class="logo"> All Rights
+            Reserved.</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
