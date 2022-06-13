@@ -149,6 +149,10 @@
             margin: 0 5rem;
         }
 
+        @include media-query($desktop) {
+            margin: 0 15rem;
+        }
+
         iframe {
             position: absolute;
             top: 0;

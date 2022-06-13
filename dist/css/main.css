@@ -861,6 +861,11 @@ th {
     margin: 0 5rem;
   }
 }
+@media only screen and (min-width: 992px) {
+  .contact-area .responsive-iframe {
+    margin: 0 15rem;
+  }
+}
 .contact-area .responsive-iframe iframe {
   position: absolute;
   top: 0;
